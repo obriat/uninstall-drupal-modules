@@ -1,0 +1,8 @@
+{
+    "phpsab.executablePathCS": "vendor/bin/phpcs",
+    "phpsab.snifferShowSources": true,
+    "phpsab.standard": "PSR12",
+    "phpsab.snifferArguments": [
+        "./src"
+    ]
+}

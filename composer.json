@@ -1,0 +1,35 @@
+{
+  "name": "obriat/uninstall-drupal-modules",
+  "type": "composer-plugin",
+  "description": "Check that Drupal modules are uninstalled before removal.",
+  "keywords": [
+      "drupal",
+      "composer",
+      "CI"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "O'Briat",
+      "email": "nospam@briat.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "OBriat\\": "src"
+    }
+  },
+  "extra": {
+    "class": "OBriat\\UninstallDrupalModulePlugin"
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "composer-plugin-api": "^2",
+    "drupal/core": ">=8.0.0",
+    "drush/drush": ">=8.0.0"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0",
+    "squizlabs/php_codesniffer": "3.*"
+  }
+}
