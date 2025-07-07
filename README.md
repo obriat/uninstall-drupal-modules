@@ -1,11 +1,17 @@
 uninstall-drupal-modules
 ========================
 
-Uninstall Drupal modules before composer remove their files.
+Uninstall modules and themes from Drupal before composer remove their files.
 
-The main purpose is to avoid `drush config:import` errors after switching branches on a dev environment
+The main purpose is to avoid `drush config:import` errors after switching branches on a dev environment or
+before a deployment.
 
-⚠️ At the moment, it's just a POC, it uses the `drush` binary (and does not support the `--uri=URI` option).
+It uses the `drush` binary (and does not support the `--uri=URI` option).
 
 # Install
-`composer require --dev obriat/uninstall-drupal-modules main-dev`
+
+## Development environments
+`composer require --dev obriat/uninstall-drupal-modules`
+
+## Deployment scripts
+`composer require obriat/uninstall-drupal-modules`
